@@ -42,7 +42,7 @@ var Dog = /** @class */ (function (_super) {
     };
     return Dog;
 }(Animales));
-var minino = new Cat('Pocky');
+var minino = new Cat('Michy');
 minino.makeSound();
 var firulais = new Dog('Pocky');
 firulais.makeSound();

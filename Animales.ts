@@ -1,4 +1,4 @@
-abstract class Animales {
+class Animales {
     
     public name: string;
     constructor(name: string) {
@@ -21,7 +21,7 @@ class Dog extends Animales {
     }
 }
 
-let minino: Cat = new Cat('Pocky');
+let minino: Cat = new Cat('Michy');
 minino.makeSound();
 let firulais: Dog = new Dog('Pocky');
 firulais.makeSound();
