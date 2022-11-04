@@ -17,6 +17,9 @@ var Animales = /** @class */ (function () {
     function Animales(name) {
         this.name = name;
     }
+    Animales.prototype.getNombre = function () {
+        return this.name;
+    };
     Animales.prototype.makeSound = function () {
         console.log(' ');
     };
@@ -28,7 +31,7 @@ var Cat = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Cat.prototype.makeSound = function () {
-        console.log('meow meow\n');
+        console.log(this.name + ' hace: meow meow\n');
     };
     return Cat;
 }(Animales));
@@ -38,7 +41,7 @@ var Dog = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Dog.prototype.makeSound = function () {
-        console.log('wuff wuff\n');
+        console.log(this.name + ' hace: wuff wuff\n');
     };
     return Dog;
 }(Animales));
@@ -46,5 +49,3 @@ var minino = new Cat('Michy');
 minino.makeSound();
 var firulais = new Dog('Pocky');
 firulais.makeSound();
-console.log(minino);
-console.log(firulais);
